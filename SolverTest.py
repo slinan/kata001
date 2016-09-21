@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-import Solver
+from Solver import Solver
 
 class SolverTest(TestCase):
     def test_calcular(self):

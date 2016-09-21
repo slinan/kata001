@@ -1,5 +1,5 @@
 import math
 
 class Solver:
-    def calcular(cadena):
-        pass
+    def calcular(self,cadena):
+        return 0
