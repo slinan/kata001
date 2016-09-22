@@ -5,4 +5,6 @@ class Solver:
         if cadena == "":
             return [0,0]
         else:
+            if ',' not in cadena:
+                return [1,int(cadena)]
             return [len(cadena.split(','))]
