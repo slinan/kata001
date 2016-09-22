@@ -8,3 +8,6 @@ class SolverTest(TestCase):
 
     def test_calcular_numero_elementos(self):
         self.assertEqual(Solver().calcular("4"), [1], "1 elemento")
+
+    def test_calcular_numero_elementos(self):
+        self.assertEqual(Solver().calcular("4,2"), [2], "2 elementos")
