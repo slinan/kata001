@@ -15,4 +15,9 @@ class Solver:
                     return [2, num2]
                 else:
                     return [2, num1]
-        return [len(cadena.split(','))]
+        cadenaSplit = cadena.split(',')
+        mini = int(cadenaSplit[0]);
+        for x in range (0, len(cadenaSplit)):
+            if(int(cadenaSplit[x]) < mini):
+                mini = int(cadenaSplit[x])
+        return [len(cadena.split(',')),mini]
