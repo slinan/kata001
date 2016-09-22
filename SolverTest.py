@@ -4,7 +4,7 @@ from Solver import Solver
 
 class SolverTest(TestCase):
     def test_calcular(self):
-        self.assertEqual(Solver().calcular(""),[0,0],"Cadena vacía")
+        self.assertEqual(Solver().calcular(""),[0,'nan'],"Cadena vacía")
 
     def test_calcular_1_elementos(self):
         self.assertEqual(Solver().calcular("5"), [1,5], "1 elemento")
