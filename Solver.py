@@ -3,7 +3,7 @@ import math
 class Solver:
     def calcular(self,cadena):
         if cadena == "":
-            return [0,'nan']
+            return [0,'nan','nan']
         else:
             cadenaSplit = cadena.split(',')
             minimo = int(cadenaSplit[0]);
