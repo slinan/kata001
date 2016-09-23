@@ -1,12 +1,16 @@
 import math
 
+def mean(numbers):
+    return float(sum(numbers)) / max(len(numbers), 1)
+
 class Solver:
+
     def calcular(self,cadena):
         if cadena == "":
             return [0,'nan','nan','nan']
         else:
             if "," not in cadena:
-                return [1,int(cadena),int(cadena)]
+                return [1,int(cadena),int(cadena),mean([int(cadena)])]
             elif len(cadena.split(","))==2:
                 cadenaSplit = cadena.split(",")
                 if int(cadenaSplit[0])>int(cadenaSplit[1]):
