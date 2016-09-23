@@ -3,7 +3,7 @@ import math
 class Solver:
     def calcular(self,cadena):
         if cadena == "":
-            return [0,'nan','nan']
+            return [0,'nan','nan','nan']
         else:
             if "," not in cadena:
                 return [1,int(cadena),int(cadena)]
