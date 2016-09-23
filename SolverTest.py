@@ -2,12 +2,15 @@ from unittest import TestCase
 
 from Solver import Solver
 
+def mean(numbers):
+    return float(sum(numbers)) / max(len(numbers), 1)
+
 class SolverTest(TestCase):
     def test_calcular(self):
         self.assertEqual(Solver().calcular(""),[0,'nan','nan','nan'],"Cadena vacía")
 
     def test_calcular_1_elementos(self):
-        self.assertEqual(Solver().calcular("5"), [1,5,5], "1 elemento")
+        self.assertEqual(Solver().calcular("5"), [1,5,5,mean([1,5,5])], "1 elemento")
 
     def test_calcular_2_elementos(self):
        self.assertEqual(Solver().calcular("4,2"), [2,2,4], "2 elementos")
