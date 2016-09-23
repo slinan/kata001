@@ -13,7 +13,7 @@ class SolverTest(TestCase):
         self.assertEqual(Solver().calcular("5"), [1,5,5,mean([5])], "1 elemento")
 
     def test_calcular_2_elementos(self):
-       self.assertEqual(Solver().calcular("4,2"), [2,2,4,mean(4,2)], "2 elementos")
+       self.assertEqual(Solver().calcular("4,2"), [2,2,4,mean([4,2])], "2 elementos")
 
     def test_calcular_n_elementos(self):
         self.assertEqual(Solver().calcular("4,2,4,5,4,5,4,5,4"), [9,2,5], "9 elementos")

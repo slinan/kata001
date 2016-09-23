@@ -14,9 +14,9 @@ class Solver:
             elif len(cadena.split(","))==2:
                 cadenaSplit = cadena.split(",")
                 if int(cadenaSplit[0])>int(cadenaSplit[1]):
-                    return [2,int(cadenaSplit[1]),int(cadenaSplit[0])]
+                    return [2,int(cadenaSplit[1]),int(cadenaSplit[0]),mean([4,2])]
                 else:
-                    return [2,int(cadenaSplit[0]),int(cadenaSplit[1])]
+                    return [2,int(cadenaSplit[0]),int(cadenaSplit[1]),mean([4,2])]
             cadenaSplit = cadena.split(',')
             minimo = int(cadenaSplit[0]);
             maximo = int(cadenaSplit[0]);
