@@ -18,11 +18,15 @@ class Solver:
                 else:
                     return [2,int(cadenaSplit[0]),int(cadenaSplit[1]),mean([4,2])]
             cadenaSplit = cadena.split(',')
-            minimo = int(cadenaSplit[0]);
-            maximo = int(cadenaSplit[0]);
-            for x in range (1, len(cadenaSplit)):
+            minimo = int(cadenaSplit[0])
+            maximo = int(cadenaSplit[0])
+            suma = 0
+            array = []
+            for x in range (0, len(cadenaSplit)):
+                suma = suma + int(cadenaSplit[x])
                 if(int(cadenaSplit[x]) < minimo):
                     minimo = int(cadenaSplit[x])
                 if(int(cadenaSplit[x])> maximo):
                     maximo = int(cadenaSplit[x])
-            return [len(cadena.split(',')),minimo, maximo]
+                array.append(int(cadenaSplit[x]))
+            return [len(cadena.split(',')),minimo, maximo, mean(array)]

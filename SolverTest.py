@@ -18,4 +18,4 @@ class SolverTest(TestCase):
     def test_calcular_n_elementos(self):
         self.assertEqual(Solver().calcular("4,2,4,5,4,5,4,5,4"), [9,2,5,mean([4,2,4,5,4,5,4,5,4])], "9 elementos")
         self.assertEqual(Solver().calcular("4,2,4,55,44,55,4,5,964"), [9,2,964, mean([4,2,4,55,44,55,4,5,964])], "9 elementos")
-        self.assertEqual(Solver().calcular("4,2,4,55,44,55,4,5,964,1,1,1,1,1,1,1,1"), [17,1,964, mean([4,2,4,55,44,55,4,5,964,1,1,1,1,1,1,1,1])], "17 elementos")
+        self.assertEqual(Solver().calcular("4,2,4,55,44,55,4,5,964,1,1,1,1,1,1,1,1"), [17,1,964,mean([4,2,4,55,44,55,4,5,964,1,1,1,1,1,1,1,1])], "17 elementos")
